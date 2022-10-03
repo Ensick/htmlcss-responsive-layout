@@ -56,6 +56,7 @@ main{
     border-radius: 25px;
     padding: 30px 35px 0 35px;
     flex-basis: 90%;
+    margin-bottom: 30px;
 }
 
 .card div > h2{
@@ -63,9 +64,11 @@ main{
     margin-bottom: 20px;
 }
 
-.card div >p{
+.card div > p{
+    color: #546777;
     margin-bottom: 20px;
     line-height: 25px;
+    font-weight: bold;
 }
 
 .card div > .fa-apple{
@@ -93,6 +96,28 @@ main{
 .btn-white{
     color: black;
     background-color: white;
+}
+
+.icons{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.icons i{
+    color: #0084FD;
+    font-size: 8rem;
+    margin-bottom: 20px;
+}
+
+.icons h2{
+    color: #0084FD;
+    margin-bottom: 20px;
+}
+
+.icons p{
+    color: #546777;
+    line-height: 25px;
+    font-weight: bold;
 }
 
 
