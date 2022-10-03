@@ -51,27 +51,41 @@ main{
 
 /* SECTION-1 */
 
+.cont-1{
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+}
+
 .card{
     background-color: #B5DDFF;
     border-radius: 25px;
     padding: 30px 35px 0 35px;
-    flex-basis: 90%;
+    flex-basis: 100%;
     margin-bottom: 30px;
 }
 
-.card div > h2{
+.card-phone{
+    background-color: #B5DDFF;
+    border-radius: 25px;
+    padding: 30px 35px 0 35px;
+    flex-basis: 100%;
+    margin-bottom: 30px;
+}
+
+.card-phone div > h2{
     color: #0084FD;
     margin-bottom: 20px;
 }
 
-.card div > p{
+.card-phone div > p{
     color: #546777;
     margin-bottom: 20px;
     line-height: 25px;
     font-weight: bold;
 }
 
-.card div > .fa-apple{
+.card-phone div > .fa-apple{
     margin-right: 0.3rem;
 }
 
@@ -138,7 +152,7 @@ main{
     }
 
     .menu-desktop > span{
-        margin: 0 1rem;
+        margin: 0 0.5rem;
         cursor: pointer;
     }
 
@@ -146,4 +160,59 @@ main{
         width: 70%;
         margin: auto;
     }
+
+    /* MEDIA-QUERY-SECTION1-DESKTOP */
+
+    .cont-1{
+        justify-content: space-between;
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    .card-phone{
+        flex-basis: 66%;
+        display: flex;
+    }
+
+    .card{
+        flex-basis: 32%;
+    }
+
+    .icons i{
+        font-size: 5em;
+    }
+
+    .card-img > img{
+        width: 90%;
+    }
+    
 }
+
+
+/* MEDIA-QUERY-SECTION-1-TABLET */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .cont-1{
+        justify-content: space-between;
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    .card-phone{
+        flex-basis: 66%;
+    }
+
+    .card{
+        flex-basis: 32%;
+    }
+
+    .icons i{
+        font-size: 5em;
+    }
+
+    .card-img > img{
+        width: 60%;
+    }
+}
+
