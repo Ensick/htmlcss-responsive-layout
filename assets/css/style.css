@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Open Sans', sans-serif;
+}
 
 
 /* HEADER */
@@ -33,10 +38,87 @@ nav .fa-bars{
     cursor: pointer;
 }
 
+.menu-desktop{
+    display: none;
+}
+
 
 /* MAIN */
 
+main{
+    margin: 7rem 0;
+}
 
+/* SECTION-1 */
+
+.card{
+    background-color: #B5DDFF;
+    border-radius: 25px;
+    padding: 30px 35px 0 35px;
+    flex-basis: 90%;
+}
+
+.card div > h2{
+    color: #0084FD;
+    margin-bottom: 20px;
+}
+
+.card div >p{
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+.card div > .fa-apple{
+    margin-right: 0.3rem;
+}
+
+.card-img > img{
+    margin-top: 40px;
+    width: 100%;
+    display: block;
+}
+
+.btn{
+    padding: 10px 40px;
+    border-radius: 25px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-blue{
+    color: white;
+    background-color:  #0084FD;
+}
+
+.btn-white{
+    color: black;
+    background-color: white;
+}
 
 
 /* FOOTER */
+
+
+
+/* MEDIA-QUERY-NAV-DESKTOP */
+
+@media screen and (min-width: 1024px){
+
+    .menu-burger{
+        display: none;
+    }
+
+    .menu-desktop{
+        display: block;
+    }
+
+    .menu-desktop > span{
+        margin: 0 1rem;
+        cursor: pointer;
+    }
+
+    nav{
+        width: 70%;
+        margin: auto;
+    }
+}
