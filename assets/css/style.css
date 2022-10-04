@@ -10,6 +10,10 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+a{
+    color: inherit;
+}
+
 
 /* HEADER */
 header{
@@ -46,7 +50,7 @@ nav .fa-bars{
 /* MAIN */
 
 main{
-    margin: 7rem 0;
+    margin: 7rem 0 0 0;
 }
 
 /* SECTION-1 */
@@ -329,7 +333,7 @@ main{
     margin-right: 10px;
 }
 
-.fa-quote-left{
+.fa-quote-custom{
     position: absolute;
     top: 0px;
     right: 5px;
@@ -363,12 +367,72 @@ main{
     margin-bottom: 30px;
 }
 
+/* SECTION-6 */
+
+.cont-6{
+    width: 90%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.cont-started{
+    padding: 60px 0;
+    color: white;
+}
 
 
+.btn-white-purple{
+    background-color: white;
+    color: #9792e4;
+    margin-bottom: 25px;
+}
+
+.cont-started > span{
+    color: #D6D5F4;
+    font-size: 1.5rem;
+}
+
+.cont-started > h3{
+    font-size: 2rem;
+    margin: 20px 0 35px 0;
+}
+
+.cont-started > h2{
+    color: #FDC15F;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.cont-started > p{
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.fa-circle{
+    font-size: 0.5rem;
+    vertical-align: middle;
+}
 
 /* FOOTER */
 
+.bg-black{
+    background-color: #333333;
+}
 
+.cont-footer{
+    width: 90%;
+    margin-inline: auto;
+    padding: 30px 0;
+    color: white;
+}
+
+.cont-footer > p{
+  margin-bottom: 40px;
+}
+
+.cont-footer span > a{
+    color:#9792e4;
+}
 
 
 /* MEDIA-QUERY-SECTION-1-TABLET */
@@ -450,8 +514,25 @@ main{
         font-size: 1rem;
     }
 
-}
+    /* MEDIA-QUERY-SECTION-6-TABLET */
+    
+    .cont-6{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
 
+    /* MEDIA-QUERY-FOOTER*/
+
+    .cont-footer{
+        width: 60%;
+        margin-inline: auto;
+        padding: 30px 0;
+        color: white;
+    }
+
+
+}
 /* MEDIA-QUERY-NAV-DESKTOP */
 
 @media screen and (min-width: 1024px){
@@ -478,7 +559,7 @@ main{
 
     .cont-flex{
         justify-content: space-between;
-        width: 80%;
+        width: 70%;
         margin-inline: auto;
     }
 
@@ -506,7 +587,7 @@ main{
     
     .cont-flex-2{
         justify-content: space-between;
-        width: 80%;
+        width: 70%;
         margin-inline: auto;
     }
 
@@ -516,17 +597,27 @@ main{
     }
 
     .planning-btm{
-        flex-basis: 45%;
+        flex-basis: 35%;
         background-color: white;
         border-radius: 25px;
         padding: 25px;
         text-align: center;
+        align-self: flex-end;
+    }
+
+    /* MEDIA-QUERY-SECTION_2-DESKTOP */
+
+    .cont-flex-3 {
+        width: 70%;
+        margin-inline: auto;
+        display: flex;
+        padding: 40px 0;
     }
 
     /* MEDIA-QUERY-SECTION-4-DESKTOP */
 
     .cont-flex-4{
-        width: 80%;
+        width: 70%;
         justify-content: space-between;
     }
 
@@ -542,7 +633,7 @@ main{
      /* MEDIA-QUERY-SECTION-5-DESKTOP*/
 
      .cont-flex-5{
-        width: 80%;
+        width: 70%;
         justify-content: space-between;
     }
 
